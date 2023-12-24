@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="cs">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -14,63 +14,78 @@
             text-align: center;
             text-transform: uppercase;
         }
+
+        .columns {
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+
+        @media (min-width: 35rem) {
+            .columns {
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+        }
     </style>
 </head>
 
 <body>
     <h1>Webová prezentace</h1>
-    <ul>
-        <li>
-            <a href="mala-hloubka-ostrosti">Malá hloubka ostrosti</a>
-        </li>
-        <li>
-            <a href="mala-hloubka-ostrosti-opravy">Malá hloubka ostrosti &ndash; opravy</a>
-        </li>
+    <div class="columns">
+        <ul>
+            <li>
+                <a href="mala-hloubka-ostrosti">Malá hloubka ostrosti</a>
+            </li>
+            <li>
+                <a href="mala-hloubka-ostrosti-opravy">Malá hloubka ostrosti &ndash; opravy</a>
+            </li>
 
-        <li>
-            <a href="velka-hloubka-ostrosti">Velká hloubka ostrosti</a>
-        </li>
-        <li>
-            <a href="velka-hloubka-ostrosti-opravy">Velká hloubka ostrosti &ndash; opravy</a>
-        </li>
+            <li>
+                <a href="velka-hloubka-ostrosti">Velká hloubka ostrosti</a>
+            </li>
+            <li>
+                <a href="velka-hloubka-ostrosti-opravy">Velká hloubka ostrosti &ndash; opravy</a>
+            </li>
 
-        <li>
-            <a href="zmrazeny-pohyb">Zmrazený pohyb</a>
-        </li>
-        <li>
-            <a href="zmrazeny-pohyb-opravy">Zmrazený pohyb &ndash; opravy</a>
-        </li>
+            <li>
+                <a href="zmrazeny-pohyb">Zmrazený pohyb</a>
+            </li>
+            <li>
+                <a href="zmrazeny-pohyb-opravy">Zmrazený pohyb &ndash; opravy</a>
+            </li>
+        </ul>
 
-
-        <li>
-            <a href="nizke-ISO">Nízké ISO</a>
-        </li>
-        <li>
-            <a href="nizke-ISO-opravy">Nízké ISO &ndash; opravy</a>
-        </li>
-        <li>
-            <a href="vysoke-ISO">Vysoké ISO</a>
-        </li>
-        <li>
-            <a href="vysoke-ISO-opravy">Vysoké ISO &ndash; opravy</a>
-        </li>
-
-
-        <li>
-            <a href="naznaceny-pohyb">Naznačený pohyb</a>
-        </li>
-        <li>
-            <a href="naznaceny-pohyb-opravy">Naznačený pohyb &ndash; opravy</a>
-        </li>
+        <ul>
+            <li>
+                <a href="nizke-ISO">Nízké ISO</a>
+            </li>
+            <li>
+                <a href="nizke-ISO-opravy">Nízké ISO &ndash; opravy</a>
+            </li>
+            <li>
+                <a href="vysoke-ISO">Vysoké ISO</a>
+            </li>
+            <li>
+                <a href="vysoke-ISO-opravy">Vysoké ISO &ndash; opravy</a>
+            </li>
 
 
-        <li>
-            <a href="fotostory">Fotostory</a>
-        </li>
-        <li>
-            <a href="fotoreklama">Fotoreklama</a>
-        </li>
-    </ul>
+            <li>
+                <a href="naznaceny-pohyb">Naznačený pohyb</a>
+            </li>
+            <li>
+                <a href="naznaceny-pohyb-opravy">Naznačený pohyb &ndash; opravy</a>
+            </li>
+        </ul>
+
+        <ul>
+            <li>
+                <a href="fotostory">Fotostory</a>
+            </li>
+            <li>
+                <a href="fotoreklama">Fotoreklama</a>
+            </li>
+        </ul>
+    </div>
 </body>
 
 </html>
